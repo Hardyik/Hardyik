@@ -4,7 +4,7 @@
 - 💞️ I’m looking to collaborate on ---
 - 📫 How to reach me <hardik.k.1310@gmail.com>
 - 😄 Pronouns: He/Him
-- ⚡ Fun fact: Coding Depends on 0's and 1's.
+- ⚡ Fun fact: Toouch some grass, It helps.
 
 <!---
 Hardyik/Hardyik is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
