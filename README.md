@@ -4,7 +4,7 @@
 - 💞️ I’m looking to collaborate on ---
 - 📫 How to reach me <hardik.k.1310@gmail.com>
 - 😄 Pronouns: He/Him
-- ⚡ Fun fact: Toouch some grass, It helps.
+- ⚡ Fun fact: Touch some grass, It helps.
 
 <!---
 Hardyik/Hardyik is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
