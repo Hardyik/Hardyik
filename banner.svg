@@ -1,0 +1,19 @@
+<svg width="900" height="200" viewBox="0 0 900 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f2027"/>
+      <stop offset="50%" stop-color="#203a43"/>
+      <stop offset="100%" stop-color="#2c5364"/>
+    </linearGradient>
+    <style>
+      .title { font: 700 34px 'Segoe UI', sans-serif; fill: #ffffff; }
+      .subtitle { font: 500 16px 'Fira Code', monospace; fill: #00FF9C; }
+      .prompt { font: 400 14px 'Fira Code', monospace; fill: #7d8590; }
+    </style>
+  </defs>
+  <rect width="900" height="200" fill="url(#bg)"/>
+  <text x="50" y="80" class="title">Hardik P. Kotawdekar</text>
+  <text x="50" y="115" class="subtitle">DevOps Enthusiast · Backend &amp; Systems Tinkerer</text>
+  <text x="50" y="150" class="prompt">$ kubectl get pods --watch</text>
+  <text x="50" y="172" class="prompt">$ docker build . --tag production</text>
+</svg>
