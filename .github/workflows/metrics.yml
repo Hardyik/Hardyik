@@ -1,41 +1,33 @@
-name: Generate Metrics
-
+name: Metrics
 on:
+  schedule: [{ cron: "0 */12 * * *" }]
   workflow_dispatch:
-  schedule:
-    # Runs once a day at midnight UTC — keeps the image fresh
-    - cron: "0 0 * * *"
-  push:
-    branches:
-      - main
+  push: { branches: [main] }
+
+permissions:
+  contents: write
 
 jobs:
-  build-metrics:
+  github-metrics:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          filename: metrics.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
-
-          # --- Look & feel ---
+          token: ${{ secrets.METRICS_TOKEN }}   # PAT with: repo, read:org, read:user
+          user: Hardyik
           template: classic
-          base: header, activity, community, repositories, metadata
+          base: header, activity, community
           config_timezone: Asia/Kolkata
+          filename: github-metrics.svg
 
-          # --- Plugins (all self-generated, no external free-tier services) ---
+          # --- the plugin that caused "Unexpected error" is simply NOT enabled ---
+          plugin_habits: no
+
+          plugin_isometric: yes
+          plugin_isometric_duration: half-year
+
           plugin_languages: yes
-          plugin_languages_analysis_timeout: 15
-          plugin_languages_categories: markup, programming
-          plugin_languages_limit: 8
-
-          plugin_habits: yes
-          plugin_habits_from: 200
-          plugin_habits_days: 14
-          plugin_habits_facts: yes
-          plugin_habits_charts: yes
-
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: full-year
+          plugin_languages_sections: most-used
+          plugin_languages_limit: 6
+          plugin_languages_indepth: no
+          plugin_languages_analysis_timeout: 30
