@@ -8,7 +8,7 @@
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=15&duration=2800&pause=900&color=00E5A0&center=true&vCenter=true&width=480&height=28&lines=%24+kubectl+get+pods+--watch;%24+docker+build+.+--tag+production;CS+Student+%7C+DevOps+%26+Backend;Automating+everything+that+can+be+automated" alt="typing"/>
 </a>
 
-<img src="https://komarev.com/ghpvc/?username=Hardyik&style=flat-square&color=00e5a0&label=PROFILE+VIEWS" alt="views"/>
+
 
 </div>
 
